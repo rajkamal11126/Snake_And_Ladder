@@ -1,2 +1,2 @@
-PlayerPosition = 0;
-rollDie = Math.floor(Math.random() * 10) % 6 + 1;
+const Utility = require("./Utility");
+console.log(Utility.startPlaying());
