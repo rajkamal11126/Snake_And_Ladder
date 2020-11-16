@@ -9,17 +9,19 @@ diceRoll = () => {
     return rollDie;
 }
 startPlaying = () => {
-    while (playerPosition < 100) {
+    while ( playerPosition < 100 ) {
         let option = Math.floor(Math.random() * 10) % 3;
         switch (option) {
             case NO_PLAY:
                 playerPosition = playerPosition;
             case LADDER:
-                playerPosition = playerPosition + diceRoll();
+                if (( playerPosition + diceRoll()) <= 100 ) {
+                    playerPosition = playerPosition + diceRoll()
+                };
             case SNAKE:
                 playerPosition = playerPosition - diceRoll();
         }
-    }
-    console.log(playerPosition);
+        console.log(playerPosition);
+    }   
 }
 module.exports = { startPlaying };
