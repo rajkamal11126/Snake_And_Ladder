@@ -1,2 +1,2 @@
 const Utility = require("./Utility");
-Utility.startPlaying()
+Utility.multiplePlayer();
