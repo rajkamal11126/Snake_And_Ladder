@@ -1,6 +1,7 @@
 
 //constant
 const NO_PLAY = 0;
+const NO_PLAY = 0;
 const LADDER = 1;
 const SNAKE = 2;
 let playerPosition = 0
